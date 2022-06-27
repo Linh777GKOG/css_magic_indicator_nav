@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: white;
+}
+
+:root {
+  --icon-size: 2rem;
+  --indicator-spacing: calc(var(--icon-size) / 8);
+  --border-radius: calc(var(--icon-size) / 4);
+  --nav-item-padding: calc(var(--icon-size) / 2);
+  --background-color: #333;
+}

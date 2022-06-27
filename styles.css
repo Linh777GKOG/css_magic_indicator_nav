@@ -52,3 +52,25 @@ body {
   bottom: calc(0.5 * var(--nav-item-padding));
   transform: translateY(50%);
 }
+
+.list .icon {
+  position: relative;
+  transition: 250ms ease-in-out;
+}
+
+.list .icon svg {
+  fill: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  display: block;
+}
+
+.list .active .text {
+  pointer-events: all;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.list .active .icon {
+  transform: translateY(calc(-50% - var(--nav-item-padding)));
+}
